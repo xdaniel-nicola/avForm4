@@ -1,0 +1,7 @@
+{
+  "name": "avForm4",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
