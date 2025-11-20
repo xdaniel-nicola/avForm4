@@ -1,0 +1,182 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <div class="header-content">
+        <ion-icon name="shield-outline" class="header-icon"></ion-icon>
+        <span>Guia de Segurança Digital</span>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="content-wrapper">
+    
+    <!-- Introduction -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>O que é Segurança Digital?</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="text-content">
+          A segurança digital é o conjunto de práticas e conhecimentos que protegem suas 
+          informações pessoais, dados financeiros e identidade online contra ameaças 
+          cibernéticas como hackers, vírus, golpes e vazamento de dados.
+        </p>
+        <div class="image-container">
+          <img [src]="contentImage" alt="Conceito de privacidade digital com cadeado simbolizando proteção de dados">
+        </div>
+        <p class="text-content">
+          No mundo atual, onde realizamos transações bancárias, compras, trabalho e 
+          comunicações online, proteger-se digitalmente é tão importante quanto trancar 
+          a porta de casa.
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Security Tips -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Práticas Essenciais de Segurança</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        
+        <!-- Tip 1: Passwords -->
+        <div class="tip-card tip-blue">
+          <div class="tip-icon-container tip-icon-blue">
+            <ion-icon name="key-outline" class="tip-icon"></ion-icon>
+          </div>
+          <div class="tip-content">
+            <h3>Senhas Fortes e Únicas</h3>
+            <p>
+              Use senhas com pelo menos 12 caracteres, combinando letras maiúsculas, 
+              minúsculas, números e símbolos. Nunca reutilize a mesma senha em diferentes sites.
+            </p>
+            <ul>
+              <li>Use um gerenciador de senhas confiável</li>
+              <li>Ative a autenticação em dois fatores (2FA) sempre que possível</li>
+              <li>Troque suas senhas periodicamente</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tip 2: Phishing -->
+        <div class="tip-card tip-indigo">
+          <div class="tip-icon-container tip-icon-indigo">
+            <ion-icon name="mail-outline" class="tip-icon"></ion-icon>
+          </div>
+          <div class="tip-content">
+            <h3>Cuidado com Phishing</h3>
+            <p>
+              Phishing são golpes que tentam roubar suas informações através de e-mails, 
+              mensagens ou sites falsos que imitam empresas legítimas.
+            </p>
+            <ul>
+              <li>Desconfie de e-mails urgentes pedindo dados pessoais</li>
+              <li>Verifique sempre o remetente e a URL do site</li>
+              <li>Não clique em links suspeitos</li>
+              <li>Bancos nunca pedem senha por e-mail ou telefone</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tip 3: Updates -->
+        <div class="tip-card tip-purple">
+          <div class="tip-icon-container tip-icon-purple">
+            <ion-icon name="phone-portrait-outline" class="tip-icon"></ion-icon>
+          </div>
+          <div class="tip-content">
+            <h3>Mantenha Tudo Atualizado</h3>
+            <p>
+              Atualizações de software corrigem vulnerabilidades de segurança que 
+              hackers podem explorar.
+            </p>
+            <ul>
+              <li>Ative atualizações automáticas no celular e computador</li>
+              <li>Mantenha aplicativos sempre na versão mais recente</li>
+              <li>Use antivírus confiável e atualizado</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tip 4: WiFi -->
+        <div class="tip-card tip-green">
+          <div class="tip-icon-container tip-icon-green">
+            <ion-icon name="wifi-outline" class="tip-icon"></ion-icon>
+          </div>
+          <div class="tip-content">
+            <h3>Wi-Fi Público: Use com Cautela</h3>
+            <p>
+              Redes Wi-Fi públicas são convenientes, mas podem ser inseguras e permitir 
+              que criminosos interceptem seus dados.
+            </p>
+            <ul>
+              <li>Evite acessar bancos ou fazer compras em Wi-Fi público</li>
+              <li>Use uma VPN para criptografar sua conexão</li>
+              <li>Desative o compartilhamento de arquivos em redes públicas</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tip 5: Social Media -->
+        <div class="tip-card tip-orange">
+          <div class="tip-icon-container tip-icon-orange">
+            <ion-icon name="person-remove-outline" class="tip-icon"></ion-icon>
+          </div>
+          <div class="tip-content">
+            <h3>Privacidade nas Redes Sociais</h3>
+            <p>
+              Informações compartilhadas publicamente podem ser usadas por criminosos 
+              para golpes ou roubo de identidade.
+            </p>
+            <ul>
+              <li>Revise suas configurações de privacidade regularmente</li>
+              <li>Não compartilhe informações sensíveis publicamente</li>
+              <li>Cuidado ao aceitar solicitações de amizade de desconhecidos</li>
+              <li>Pense duas vezes antes de postar sua localização</li>
+            </ul>
+          </div>
+        </div>
+
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Summary -->
+    <ion-card class="summary-card">
+      <ion-card-content>
+        <div class="summary-content">
+          <ion-icon name="checkmark-circle-outline" class="summary-icon"></ion-icon>
+          <div>
+            <h2>Resumo: Proteja-se Online</h2>
+            <p>
+              Seguindo estas práticas simples, você reduz significativamente o risco de 
+              ter seus dados comprometidos. Lembre-se: a segurança digital é uma 
+              responsabilidade contínua, não uma tarefa única.
+            </p>
+            <p>
+              Seja sempre vigilante, desconfie de ofertas boas demais para ser verdade, 
+              e proteja suas informações como você protegeria seus bens físicos.
+            </p>
+            <p>
+              Agora que você aprendeu o básico, teste seus conhecimentos no quiz interativo!
+            </p>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Navigation Buttons -->
+    <div class="button-container">
+      <ion-button expand="block" (click)="navigateToQuiz()" class="primary-button">
+        Fazer o Quiz
+      </ion-button>
+      <ion-button expand="block" fill="outline" (click)="navigateToHome()">
+        Voltar ao Início
+      </ion-button>
+    </div>
+
+  </div>
+</ion-content>

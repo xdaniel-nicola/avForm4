@@ -1,0 +1,190 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <div class="header-content">
+        <ion-icon name="shield-outline" class="header-icon"></ion-icon>
+        <span>Mensagem de Conscientização</span>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="content-wrapper">
+    
+    <!-- Hero Image -->
+    <div class="hero-image-container">
+      <img [src]="finalImage" alt="Conceito de educação em segurança online e proteção digital">
+    </div>
+
+    <!-- Main Message -->
+    <ion-card class="message-card">
+      <ion-card-content>
+        <h2 class="message-title">Seja um Cidadão Digital Consciente</h2>
+        <p class="message-text">
+          Parabéns por completar este módulo de conscientização sobre segurança digital! 
+          Você deu um passo importante para se tornar um cidadão mais seguro e responsável 
+          no ambiente digital.
+        </p>
+        <p class="message-text">
+          Lembre-se: a segurança digital não é apenas sobre proteger a si mesmo, mas também 
+          sobre contribuir para um ambiente online mais seguro para todos.
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Citizenship Cards -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="6">
+          <ion-card class="citizenship-card">
+            <ion-card-content>
+              <div class="citizenship-icon-container citizenship-icon-blue">
+                <ion-icon name="heart-outline" class="citizenship-icon"></ion-icon>
+              </div>
+              <ion-card-title>Responsabilidade Individual</ion-card-title>
+              <p>
+                Cada um de nós tem a responsabilidade de proteger nossos dados e os de 
+                nossa família. Adote boas práticas de segurança no seu dia a dia e seja 
+                um exemplo para outros.
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="12" size-md="6">
+          <ion-card class="citizenship-card">
+            <ion-card-content>
+              <div class="citizenship-icon-container citizenship-icon-indigo">
+                <ion-icon name="people-outline" class="citizenship-icon"></ion-icon>
+              </div>
+              <ion-card-title>Eduque Outros</ion-card-title>
+              <p>
+                Compartilhe o que aprendeu com amigos e familiares, especialmente idosos 
+                e crianças que podem ser mais vulneráveis a golpes online. Juntos somos 
+                mais fortes.
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="12" size-md="6">
+          <ion-card class="citizenship-card">
+            <ion-card-content>
+              <div class="citizenship-icon-container citizenship-icon-purple">
+                <ion-icon name="shield-outline" class="citizenship-icon"></ion-icon>
+              </div>
+              <ion-card-title>Denuncie Crimes</ion-card-title>
+              <p>
+                Se você for vítima de um crime digital ou identificar tentativas de golpe, 
+                denuncie às autoridades competentes. Sua denúncia pode proteger outras pessoas.
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="12" size-md="6">
+          <ion-card class="citizenship-card">
+            <ion-card-content>
+              <div class="citizenship-icon-container citizenship-icon-green">
+                <ion-icon name="globe-outline" class="citizenship-icon"></ion-icon>
+              </div>
+              <ion-card-title>Cidadania Digital</ion-card-title>
+              <p>
+                Respeite a privacidade dos outros, não compartilhe informações falsas e 
+                contribua para uma internet mais ética e segura. Seja um cidadão digital 
+                responsável.
+              </p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- Call to Action -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Próximos Passos</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="steps-list">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <strong>Revise suas senhas:</strong> Comece hoje mesmo a atualizar suas senhas 
+              para senhas mais fortes e únicas em cada serviço.
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <strong>Ative a autenticação em dois fatores:</strong> Configure o 2FA em suas 
+              contas mais importantes (e-mail, banco, redes sociais).
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <strong>Verifique as configurações de privacidade:</strong> Revise as configurações 
+              de privacidade em suas redes sociais e aplicativos.
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <strong>Instale as atualizações pendentes:</strong> Atualize seu sistema operacional, 
+              aplicativos e antivírus.
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <strong>Eduque sua família:</strong> Compartilhe o que aprendeu com pessoas próximas, 
+              especialmente com idosos e crianças.
+            </div>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Final Quote -->
+    <ion-card class="quote-card">
+      <ion-card-content>
+        <blockquote class="quote-text">
+          "A segurança na internet não é um produto, mas um processo. 
+          É preciso vigilância constante e educação contínua."
+        </blockquote>
+        <p class="quote-author">
+          Continue se educando e protegendo-se no mundo digital!
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Navigation Buttons -->
+    <div class="button-container">
+      <ion-button expand="block" (click)="navigateToHome()" class="primary-button">
+        Voltar ao Início
+      </ion-button>
+      <ion-button expand="block" fill="outline" (click)="navigateToAbout()">
+        Sobre o App
+      </ion-button>
+    </div>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark">
+    <div class="footer-content">
+      <p class="footer-title">Obrigado por usar o CyberGuard!</p>
+      <p class="footer-subtitle">Juntos construímos uma internet mais segura e consciente. 🛡️</p>
+    </div>
+  </ion-toolbar>
+</ion-footer>

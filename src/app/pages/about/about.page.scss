@@ -1,0 +1,323 @@
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-icon {
+  font-size: 24px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.app-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(to bottom right, var(--ion-color-primary), #4f46e5);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-icon {
+    font-size: 32px;
+    color: white;
+  }
+}
+
+.app-name {
+  font-size: 24px;
+  margin: 0;
+  color: var(--ion-color-step-850);
+}
+
+.app-version {
+  margin: 4px 0 0 0;
+  color: var(--ion-color-step-550);
+  font-size: 14px;
+}
+
+.description-text {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  color: var(--ion-color-step-600);
+}
+
+.description-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-header-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title-icon {
+  font-size: 28px;
+  color: var(--ion-color-primary);
+}
+
+.mission-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mission-icon-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mission-icon-blue {
+  background-color: rgba(var(--ion-color-primary-rgb), 0.1);
+}
+
+.mission-icon-indigo {
+  background-color: rgba(99, 102, 241, 0.1);
+}
+
+.mission-icon {
+  font-size: 24px;
+  color: var(--ion-color-primary);
+}
+
+.mission-item h3 {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  color: var(--ion-color-step-850);
+}
+
+.mission-item p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--ion-color-step-600);
+}
+
+.objectives-list {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--ion-color-step-600);
+  line-height: 1.8;
+}
+
+.feature-box {
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  height: 100%;
+}
+
+.feature-blue {
+  background-color: rgba(var(--ion-color-primary-rgb), 0.05);
+}
+
+.feature-indigo {
+  background-color: rgba(99, 102, 241, 0.05);
+}
+
+.feature-purple {
+  background-color: rgba(168, 85, 247, 0.05);
+}
+
+.feature-green {
+  background-color: rgba(34, 197, 94, 0.05);
+}
+
+.feature-box h3 {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  color: var(--ion-color-step-850);
+}
+
+.feature-box p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--ion-color-step-600);
+  font-size: 14px;
+}
+
+.accessibility-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.accessibility-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.check-icon {
+  width: 24px;
+  height: 24px;
+  background-color: var(--ion-color-primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.accessibility-item span {
+  line-height: 1.6;
+  color: var(--ion-color-step-600);
+  padding-top: 2px;
+}
+
+.accessibility-item strong {
+  color: var(--ion-color-step-850);
+}
+
+.ethics-box {
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.ethics-blue {
+  background-color: rgba(var(--ion-color-primary-rgb), 0.05);
+}
+
+.ethics-indigo {
+  background-color: rgba(99, 102, 241, 0.05);
+}
+
+.ethics-purple {
+  background-color: rgba(168, 85, 247, 0.05);
+}
+
+.ethics-green {
+  background-color: rgba(34, 197, 94, 0.05);
+}
+
+.ethics-box h3 {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  color: var(--ion-color-step-850);
+}
+
+.ethics-box p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--ion-color-step-600);
+}
+
+.impact-card {
+  background: linear-gradient(to right, var(--ion-color-primary), #4f46e5);
+  color: white;
+}
+
+.impact-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.impact-icon {
+  font-size: 32px;
+  color: white;
+}
+
+.impact-header h2 {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+}
+
+.impact-text {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.impact-list {
+  margin: 0;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.8;
+}
+
+.support-list {
+  margin: 16px 0 0 0;
+  padding-left: 20px;
+  color: var(--ion-color-step-600);
+  line-height: 1.8;
+}
+
+.support-list strong {
+  color: var(--ion-color-step-850);
+}
+
+.button-container {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.primary-button {
+  --background: linear-gradient(to right, var(--ion-color-primary), #4f46e5);
+  font-weight: 600;
+}
+
+.footer-content {
+  text-align: center;
+  padding: 16px;
+}
+
+.footer-title {
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  color: var(--ion-color-light);
+}
+
+.footer-subtitle {
+  margin: 0;
+  font-size: 11px;
+  color: var(--ion-color-step-400);
+}
+
+@media (max-width: 768px) {
+  .mission-item {
+    flex-direction: column;
+  }
+
+  .footer-title {
+    font-size: 12px;
+  }
+
+  .footer-subtitle {
+    font-size: 10px;
+  }
+}

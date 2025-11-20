@@ -1,0 +1,324 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <div class="header-content">
+        <ion-icon name="shield-outline" class="header-icon"></ion-icon>
+        <span>Sobre o CyberGuard</span>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="content-wrapper">
+
+    <!-- App Description -->
+    <ion-card>
+      <ion-card-content>
+        <div class="app-header">
+          <div class="app-icon">
+            <ion-icon name="shield-outline"></ion-icon>
+          </div>
+          <div>
+            <h2 class="app-name">CyberGuard</h2>
+            <p class="app-version">Versão 1.0.0</p>
+          </div>
+        </div>
+        
+        <p class="description-text">
+          O CyberGuard é um aplicativo educacional desenvolvido para conscientizar cidadãos 
+          sobre a importância da segurança digital e boas práticas no ambiente online.
+        </p>
+        
+        <p class="description-text">
+          Em um mundo cada vez mais conectado, proteger seus dados pessoais e entender os 
+          riscos digitais é essencial. Este aplicativo fornece conhecimento prático e acessível 
+          para que todos possam navegar com segurança na internet.
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Mission and Objectives -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Missão e Objetivos</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        
+        <div class="mission-item">
+          <div class="mission-icon-container mission-icon-blue">
+            <ion-icon name="at-outline" class="mission-icon"></ion-icon>
+          </div>
+          <div>
+            <h3>Nossa Missão</h3>
+            <p>
+              Educar e capacitar cidadãos para que possam proteger seus dados pessoais, 
+              identificar ameaças digitais e contribuir para um ambiente online mais seguro 
+              para todos.
+            </p>
+          </div>
+        </div>
+
+        <div class="mission-item">
+          <div class="mission-icon-container mission-icon-indigo">
+            <ion-icon name="book-outline" class="mission-icon"></ion-icon>
+          </div>
+          <div>
+            <h3>Objetivos</h3>
+            <ul class="objectives-list">
+              <li>Promover a conscientização sobre segurança digital</li>
+              <li>Ensinar práticas seguras de navegação e uso de tecnologia</li>
+              <li>Prevenir crimes cibernéticos através da educação</li>
+              <li>Fortalecer a cidadania digital responsável</li>
+            </ul>
+          </div>
+        </div>
+
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Features -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Recursos do Aplicativo</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12" size-md="6">
+              <div class="feature-box feature-blue">
+                <h3>📚 Conteúdo Educativo</h3>
+                <p>
+                  Informações completas sobre segurança digital, phishing, senhas fortes, 
+                  privacidade e muito mais.
+                </p>
+              </div>
+            </ion-col>
+
+            <ion-col size="12" size-md="6">
+              <div class="feature-box feature-indigo">
+                <h3>🎯 Quiz Interativo</h3>
+                <p>
+                  Teste seus conhecimentos através de perguntas interativas com feedback 
+                  imediato e explicações detalhadas.
+                </p>
+              </div>
+            </ion-col>
+
+            <ion-col size="12" size-md="6">
+              <div class="feature-box feature-purple">
+                <h3>🖼️ Recursos Multimídia</h3>
+                <p>
+                  Imagens ilustrativas e conteúdo visual para facilitar o aprendizado e 
+                  torná-lo mais atrativo.
+                </p>
+              </div>
+            </ion-col>
+
+            <ion-col size="12" size-md="6">
+              <div class="feature-box feature-green">
+                <h3>💡 Dicas Práticas</h3>
+                <p>
+                  Orientações práticas que você pode aplicar imediatamente para aumentar 
+                  sua segurança online.
+                </p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Accessibility -->
+    <ion-card>
+      <ion-card-header>
+        <div class="card-header-with-icon">
+          <ion-icon name="accessibility-outline" class="title-icon"></ion-icon>
+          <ion-card-title>Acessibilidade</ion-card-title>
+        </div>
+      </ion-card-header>
+      <ion-card-content>
+        
+        <p class="description-text">
+          O CyberGuard foi desenvolvido seguindo princípios de acessibilidade para garantir 
+          que todos possam utilizar o aplicativo, independentemente de suas capacidades:
+        </p>
+        
+        <div class="accessibility-list">
+          <div class="accessibility-item">
+            <div class="check-icon">✓</div>
+            <span>
+              <strong>Contraste adequado:</strong> Cores escolhidas para garantir legibilidade 
+              para pessoas com deficiência visual
+            </span>
+          </div>
+          <div class="accessibility-item">
+            <div class="check-icon">✓</div>
+            <span>
+              <strong>Fontes legíveis:</strong> Tipografia clara e tamanhos apropriados para 
+              facilitar a leitura
+            </span>
+          </div>
+          <div class="accessibility-item">
+            <div class="check-icon">✓</div>
+            <span>
+              <strong>Textos alternativos:</strong> Todas as imagens possuem descrições para 
+              leitores de tela
+            </span>
+          </div>
+          <div class="accessibility-item">
+            <div class="check-icon">✓</div>
+            <span>
+              <strong>Navegação intuitiva:</strong> Interface simples e fácil de usar
+            </span>
+          </div>
+          <div class="accessibility-item">
+            <div class="check-icon">✓</div>
+            <span>
+              <strong>Labels descritivos:</strong> Botões e elementos interativos com rótulos 
+              claros e descritivos
+            </span>
+          </div>
+        </div>
+
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Ethics and Privacy -->
+    <ion-card>
+      <ion-card-header>
+        <div class="card-header-with-icon">
+          <ion-icon name="lock-closed-outline" class="title-icon"></ion-icon>
+          <ion-card-title>Ética e Proteção de Dados</ion-card-title>
+        </div>
+      </ion-card-header>
+      <ion-card-content>
+        
+        <div class="ethics-box ethics-blue">
+          <h3>🔒 Privacidade em Primeiro Lugar</h3>
+          <p>
+            Este aplicativo não coleta, armazena ou compartilha nenhum dado pessoal dos 
+            usuários. Todo o conteúdo é processado localmente no seu dispositivo.
+          </p>
+        </div>
+
+        <div class="ethics-box ethics-indigo">
+          <h3>🛡️ Sem Rastreamento</h3>
+          <p>
+            Não utilizamos cookies de rastreamento, analytics ou qualquer ferramenta que 
+            monitore seu comportamento. Sua privacidade é respeitada.
+          </p>
+        </div>
+
+        <div class="ethics-box ethics-purple">
+          <h3>⚖️ Uso Ético</h3>
+          <p>
+            O CyberGuard é um projeto educacional sem fins lucrativos, desenvolvido com o 
+            objetivo de promover o bem-estar digital da sociedade.
+          </p>
+        </div>
+
+        <div class="ethics-box ethics-green">
+          <h3>🎓 Conteúdo Educacional</h3>
+          <p>
+            Todo o conteúdo é baseado em melhores práticas reconhecidas de segurança digital 
+            e é fornecido apenas para fins educacionais.
+          </p>
+        </div>
+
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Impact -->
+    <ion-card class="impact-card">
+      <ion-card-content>
+        <div class="impact-header">
+          <ion-icon name="people-outline" class="impact-icon"></ion-icon>
+          <h2>Impacto Social</h2>
+        </div>
+        
+        <p class="impact-text">
+          O CyberGuard busca contribuir para uma sociedade mais segura e consciente no 
+          ambiente digital. Através da educação, queremos:
+        </p>
+        
+        <ul class="impact-list">
+          <li>Reduzir o número de vítimas de crimes cibernéticos</li>
+          <li>Empoderar cidadãos com conhecimento sobre proteção digital</li>
+          <li>Promover inclusão digital segura para todas as idades</li>
+          <li>Fortalecer a cidadania digital responsável</li>
+          <li>Criar uma cultura de segurança e ética online</li>
+        </ul>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Technical Info -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Informações Técnicas</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12" size-md="6">
+              <p><strong>Alunos:</strong> Daniel Nicola | João Victor</p>
+              <p><strong>Versão:</strong> 1.0.0</p>
+              <p><strong>Framework:</strong> Angular + Ionic 17+</p>
+              <p><strong>Plataforma:</strong> Web e Mobile</p>
+            </ion-col>
+            <ion-col size="12" size-md="6">
+              <p><strong>Ícones:</strong> Ionicons</p>
+              <p><strong>Imagens:</strong> Unsplash</p>
+              <p><strong>Licença:</strong> Uso Educacional</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Support -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Suporte e Contato</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="description-text">
+          Este é um projeto educacional desenvolvido para fins acadêmicos. Para mais 
+          informações sobre segurança digital, consulte:
+        </p>
+        <ul class="support-list">
+          <li><strong>Delegacia de Crimes Eletrônicos</strong> - Para denúncias</li>
+          <li><strong>CERT.br</strong> - Centro de Estudos, Resposta e Tratamento de Incidentes</li>
+          <li><strong>Safernet Brasil</strong> - Organização de proteção e promoção dos direitos humanos na internet</li>
+        </ul>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Navigation Buttons -->
+    <div class="button-container">
+      <ion-button expand="block" (click)="navigateToHome()" class="primary-button">
+        Voltar ao Início
+      </ion-button>
+      <ion-button expand="block" fill="outline" (click)="navigateToContent()">
+        Ver Conteúdo
+      </ion-button>
+    </div>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark">
+    <div class="footer-content">
+      <p class="footer-title">CyberGuard © 2025 - Projeto Educacional de Conscientização Digital</p>
+      <p class="footer-subtitle">Desenvolvido com propósito de educar e proteger cidadãos no ambiente digital</p>
+    </div>
+  </ion-toolbar>
+</ion-footer>

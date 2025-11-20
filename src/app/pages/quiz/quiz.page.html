@@ -1,0 +1,132 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title *ngIf="!showResult">
+      <div class="header-content">
+        <span>Quiz de Segurança Digital</span>
+        <div class="question-counter">
+          Questão {{ currentQuestion + 1 }}/{{ quizQuestions.length }}
+        </div>
+      </div>
+    </ion-title>
+    <ion-title *ngIf="showResult">
+      <div class="header-content">
+        <ion-icon name="trophy-outline" class="header-icon"></ion-icon>
+        <span>Resultado do Quiz</span>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="content-wrapper">
+
+    <!-- Quiz Questions -->
+    <div *ngIf="!showResult">
+      <!-- Progress Bar -->
+      <ion-progress-bar [value]="progress" class="progress-bar"></ion-progress-bar>
+
+      <!-- Question Card -->
+      <ion-card class="question-card">
+        <ion-card-header>
+          <ion-card-title>{{ currentQ.question }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          
+          <!-- Options -->
+          <div class="options-container">
+            <button 
+              *ngFor="let option of currentQ.options; let i = index"
+              class="option-button"
+              [class.option-correct]="isCorrectAnswer(i)"
+              [class.option-incorrect]="isIncorrectAnswer(i)"
+              [class.option-selected]="selectedAnswer === i"
+              [disabled]="selectedAnswer !== null"
+              (click)="handleAnswer(i)">
+              <span>{{ option }}</span>
+              <ion-icon 
+                *ngIf="isCorrectAnswer(i)" 
+                name="checkmark-circle-outline" 
+                class="result-icon correct-icon">
+              </ion-icon>
+              <ion-icon 
+                *ngIf="isIncorrectAnswer(i)" 
+                name="close-circle-outline" 
+                class="result-icon incorrect-icon">
+              </ion-icon>
+            </button>
+          </div>
+
+          <!-- Explanation -->
+          <div *ngIf="selectedAnswer !== null" class="explanation-box" 
+               [class.explanation-correct]="selectedAnswer === currentQ.correctAnswer">
+            <p><strong>Explicação:</strong> {{ currentQ.explanation }}</p>
+          </div>
+
+        </ion-card-content>
+      </ion-card>
+
+      <!-- Next Button -->
+      <div *ngIf="selectedAnswer !== null" class="button-container">
+        <ion-button expand="block" (click)="handleNext()" class="primary-button">
+          {{ currentQuestion < quizQuestions.length - 1 ? 'Próxima Questão' : 'Ver Resultado' }}
+        </ion-button>
+      </div>
+
+      <!-- Score Display -->
+      <ion-card class="score-card">
+        <ion-card-content>
+          <div class="score-content">
+            <div>
+              <div class="score-label">Pontuação Atual</div>
+              <div class="score-value">{{ score }} pontos</div>
+            </div>
+            <ion-icon name="trophy-outline" class="score-icon"></ion-icon>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <!-- Results -->
+    <div *ngIf="showResult">
+      <ion-card class="result-card">
+        <ion-card-content>
+          <div class="result-icon-container">
+            <ion-icon name="trophy-outline" class="trophy-icon"></ion-icon>
+          </div>
+          
+          <h2 class="result-title">Quiz Concluído!</h2>
+          
+          <div class="result-score">
+            {{ score }}/{{ quizQuestions.length }}
+          </div>
+          
+          <p class="result-message">
+            {{ getScoreMessage() }}
+          </p>
+
+          <div class="result-details">
+            <p>
+              Você acertou <strong>{{ score }}</strong> de 
+              <strong>{{ quizQuestions.length }}</strong> questões
+              ({{ getScorePercentage() }}% de aproveitamento)
+            </p>
+          </div>
+        </ion-card-content>
+      </ion-card>
+
+      <div class="button-container">
+        <ion-button expand="block" (click)="restartQuiz()" class="primary-button">
+          <ion-icon slot="start" name="refresh-outline"></ion-icon>
+          Refazer Quiz
+        </ion-button>
+        <ion-button expand="block" color="success" (click)="navigateToFinal()">
+          Continuar
+        </ion-button>
+      </div>
+    </div>
+
+  </div>
+</ion-content>

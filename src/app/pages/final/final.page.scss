@@ -1,0 +1,197 @@
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-icon {
+  font-size: 24px;
+}
+
+.hero-image-container {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image-container img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.message-card {
+  background: linear-gradient(to right, var(--ion-color-primary), #4f46e5);
+  color: white;
+}
+
+.message-title {
+  font-size: 26px;
+  text-align: center;
+  margin: 0 0 20px 0;
+  color: white;
+}
+
+.message-text {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.message-text:last-child {
+  margin-bottom: 0;
+}
+
+.citizenship-card {
+  height: 100%;
+}
+
+.citizenship-icon-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.citizenship-icon-blue {
+  background-color: rgba(var(--ion-color-primary-rgb), 0.1);
+}
+
+.citizenship-icon-indigo {
+  background-color: rgba(99, 102, 241, 0.1);
+}
+
+.citizenship-icon-purple {
+  background-color: rgba(168, 85, 247, 0.1);
+}
+
+.citizenship-icon-green {
+  background-color: rgba(34, 197, 94, 0.1);
+}
+
+.citizenship-icon {
+  font-size: 24px;
+  color: var(--ion-color-primary);
+}
+
+ion-card-title {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: var(--ion-color-step-850);
+}
+
+.citizenship-card p {
+  line-height: 1.6;
+  color: var(--ion-color-step-600);
+}
+
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  background-color: var(--ion-color-primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.step-content {
+  flex: 1;
+  line-height: 1.6;
+  color: var(--ion-color-step-600);
+  padding-top: 4px;
+}
+
+.step-content strong {
+  color: var(--ion-color-step-850);
+}
+
+.quote-card {
+  background: linear-gradient(to right, #22c55e, #10b981);
+  color: white;
+  text-align: center;
+}
+
+.quote-text {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.7;
+  margin: 0 0 16px 0;
+  color: white;
+}
+
+.quote-author {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.button-container {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.primary-button {
+  --background: linear-gradient(to right, var(--ion-color-primary), #4f46e5);
+  font-weight: 600;
+}
+
+.footer-content {
+  text-align: center;
+  padding: 16px;
+}
+
+.footer-title {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: var(--ion-color-light);
+}
+
+.footer-subtitle {
+  margin: 0;
+  font-size: 12px;
+  color: var(--ion-color-step-400);
+}
+
+@media (max-width: 768px) {
+  .hero-image-container img {
+    height: 200px;
+  }
+
+  .message-title {
+    font-size: 22px;
+  }
+
+  .message-text {
+    font-size: 15px;
+  }
+}

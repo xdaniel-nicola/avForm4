@@ -1,0 +1,117 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      <div class="header-content">
+        <ion-icon name="shield-outline" class="header-icon"></ion-icon>
+        <div>
+          <div class="header-title">CyberGuard</div>
+          <div class="header-subtitle">Sua segurança digital em primeiro lugar</div>
+        </div>
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="content-wrapper">
+    <!-- Hero Image -->
+    <div class="hero-image-container">
+      <img 
+      [src]="heroImage" 
+      alt="Ilustração de segurança cibernética mostrando proteção digital e privacidade online" 
+      (click)="openPreview()"
+      class="hero-image">
+    </div>
+
+    <ion-modal [isOpen]="showModal" (didDismiss)="closePreview()">
+      <ng-template>
+        <ion-content (click)="closePreview()" class="ion-padding">
+          <img
+            [src]="heroImage"
+            style="width: 100%; border-radius: 12px"
+          />
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+
+    <!-- App Description -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Bem-vindo ao CyberGuard</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p class="description-text">
+          O CyberGuard é seu companheiro essencial para navegar com segurança no mundo digital. 
+          Aprenda a proteger seus dados pessoais, evitar fraudes online e manter suas informações 
+          em segurança.
+        </p>
+        <p class="description-text">
+          Neste aplicativo, você encontrará informações valiosas sobre práticas de segurança 
+          digital e poderá testar seus conhecimentos através de um quiz interativo.
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Feature Cards -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="4">
+          <ion-card class="feature-card">
+            <ion-card-content>
+              <div class="feature-icon-container feature-icon-blue">
+                <ion-icon name="lock-closed-outline" class="feature-icon"></ion-icon>
+              </div>
+              <ion-card-title>Proteção de Dados</ion-card-title>
+              <p>Aprenda a proteger suas informações pessoais e senhas</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="12" size-md="4">
+          <ion-card class="feature-card">
+            <ion-card-content>
+              <div class="feature-icon-container feature-icon-indigo">
+                <ion-icon name="eye-outline" class="feature-icon"></ion-icon>
+              </div>
+              <ion-card-title>Privacidade Online</ion-card-title>
+              <p>Descubra como manter sua privacidade nas redes sociais</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col size="12" size-md="4">
+          <ion-card class="feature-card">
+            <ion-card-content>
+              <div class="feature-icon-container feature-icon-purple">
+                <ion-icon name="warning-outline" class="feature-icon"></ion-icon>
+              </div>
+              <ion-card-title>Identificar Ameaças</ion-card-title>
+              <p>Reconheça golpes, phishing e outras ameaças virtuais</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- Navigation Buttons -->
+    <div class="button-container">
+      <ion-button expand="block" (click)="navigateToContent()" class="primary-button">
+        Começar Aprendizado
+        <ion-icon slot="end" name="shield-outline"></ion-icon>
+      </ion-button>
+      
+      <ion-button expand="block" fill="outline" (click)="navigateToAbout()">
+        Sobre o App
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="dark">
+    <div class="footer-content">
+      <p class="footer-title">CyberGuard - Conscientização e Educação em Segurança Digital</p>
+      <p class="footer-subtitle">Proteja-se online. Eduque-se digitalmente. Navegue com segurança.</p>
+    </div>
+  </ion-toolbar>
+</ion-footer>
